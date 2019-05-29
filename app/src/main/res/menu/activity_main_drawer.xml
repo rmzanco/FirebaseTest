@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single"
+            android:title="asdf"
+        >
+        <item
+            android:id="@+id/nav_alunos"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Alunos" />
+        <item
+            android:id="@+id/nav_biografia"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Biografia" />
+
+    </group>
+
+    <item android:title="Jogos">
+        <menu>
+            <item
+                android:id="@+id/nav_idade"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Idade" />
+            <item
+                android:id="@+id/nav_altura"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Altura" />
+            <item
+                android:id="@+id/nav_coracao_1"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Coração 1" />
+            <item
+                android:id="@+id/nav_coracao_2"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Coração 2" />
+        </menu>
+    </item>
+</menu>

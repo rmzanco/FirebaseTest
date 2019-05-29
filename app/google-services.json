@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "588520018467",
+    "firebase_url": "https://aula11-d84c8.firebaseio.com",
+    "project_id": "aula11-d84c8",
+    "storage_bucket": "aula11-d84c8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:588520018467:android:06d3974a02a57b1f",
+        "android_client_info": {
+          "package_name": "br.unicamp.ft.ulisses.aula05_drawer2018"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "588520018467-kd42ij4id7ngm20bmg9lvovkcgbs85m2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.unicamp.ft.ulisses.aula05_drawer2018",
+            "certificate_hash": "8d896bd681ff6a59e4fb7d666d50a7a55782ddea"
+          }
+        },
+        {
+          "client_id": "588520018467-fkbfg7i387n1e25oomfun83a46ivbog5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_BiuwsL7WWkqbKyXTpHxqd2CTJGpUWOU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "588520018467-fkbfg7i387n1e25oomfun83a46ivbog5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
