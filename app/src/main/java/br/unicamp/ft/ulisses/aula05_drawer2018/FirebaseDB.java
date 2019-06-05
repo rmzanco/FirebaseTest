@@ -23,6 +23,8 @@ import java.util.Random;
 
 import br.unicamp.ft.ulisses.aula05_drawer2018.interfaces.OnBiografiaRequest;
 
+import static android.support.constraint.Constraints.TAG;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -119,6 +121,26 @@ public class FirebaseDB extends Fragment {
 
                 Resposta resposta = new Resposta(name,answer,guess);
                 mFirebaseDatabaseReference.child("respostas").push().setValue(resposta);
+
+                mFirebaseDatabaseReference.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        for (DataSnapshot remoteRespostas : dataSnapshot.getChildren()){
+                            for (DataSnapshot remorteResposta : remoteRespostas.getChildren()){
+                                Resposta resposta = remorteResposta.getValue(Resposta.class);
+                                Log.v("DATASET",resposta.getAnswer()+"-"+resposta.getChosen());
+                            }
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+                        Log.w(TAG, "Failed to read value.", error.toException());
+                    }
+                });
+
+                mFirebaseDatabaseReference.limitToLast(12);
+
             }
         };
 
